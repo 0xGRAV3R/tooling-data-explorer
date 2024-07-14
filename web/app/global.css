@@ -17,3 +17,38 @@ body {
 .wallet-adapter-button {
   font-family: inherit !important;
 }
+
+/* Added new styles 134D93F */
+.chat-bubble {
+  max-width: 100%;
+}
+
+.wallet-adapter-button {
+  font-size: 13px;
+  height: 36px !important;
+}
+
+.btn {
+  height: 2rem;
+  min-height: 2rem;
+}
+
+.menu {
+  line-height: 0.75rem;
+}
+
+.btn-circle {
+  width: 1rem;
+  min-height: 1rem;
+  height: 1rem;
+}
+
+.navbar {
+  border-radius: 8px !important;
+  background-color: darkslategray !important;
+}
+
+.footer {
+  background-color: darksalmon;
+}
+

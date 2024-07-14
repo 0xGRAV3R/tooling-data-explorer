@@ -5,108 +5,162 @@
  * IDL can be found at `target/idl/tooling_data_explorer.json`.
  */
 export type ToolingDataExplorer = {
-  address: 'FkCxDVEvwyDbffGa7RGsrm8nwyn6d31JN6nnNdzPkn9n';
-  metadata: {
-    name: 'toolingDataExplorer';
-    version: '0.1.0';
-    spec: '0.1.0';
-    description: 'Created with Anchor';
-  };
-  instructions: [
+  "address": "FkCxDVEvwyDbffGa7RGsrm8nwyn6d31JN6nnNdzPkn9n",
+  "metadata": {
+    "name": "toolingDataExplorer",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "instructions": [
     {
-      name: 'close';
-      discriminator: [98, 165, 201, 177, 108, 65, 206, 96];
-      accounts: [
+      "name": "close",
+      "discriminator": [
+        98,
+        165,
+        201,
+        177,
+        108,
+        65,
+        206,
+        96
+      ],
+      "accounts": [
         {
-          name: 'payer';
-          writable: true;
-          signer: true;
+          "name": "payer",
+          "writable": true,
+          "signer": true
         },
         {
-          name: 'toolingDataExplorer';
-          writable: true;
+          "name": "toolingDataExplorer",
+          "writable": true
         }
-      ];
-      args: [];
+      ],
+      "args": []
     },
     {
-      name: 'decrement';
-      discriminator: [106, 227, 168, 59, 248, 27, 150, 101];
-      accounts: [
+      "name": "decrement",
+      "discriminator": [
+        106,
+        227,
+        168,
+        59,
+        248,
+        27,
+        150,
+        101
+      ],
+      "accounts": [
         {
-          name: 'toolingDataExplorer';
-          writable: true;
+          "name": "toolingDataExplorer",
+          "writable": true
         }
-      ];
-      args: [];
+      ],
+      "args": []
     },
     {
-      name: 'increment';
-      discriminator: [11, 18, 104, 9, 104, 174, 59, 33];
-      accounts: [
+      "name": "increment",
+      "discriminator": [
+        11,
+        18,
+        104,
+        9,
+        104,
+        174,
+        59,
+        33
+      ],
+      "accounts": [
         {
-          name: 'toolingDataExplorer';
-          writable: true;
+          "name": "toolingDataExplorer",
+          "writable": true
         }
-      ];
-      args: [];
+      ],
+      "args": []
     },
     {
-      name: 'initialize';
-      discriminator: [175, 175, 109, 31, 13, 152, 155, 237];
-      accounts: [
+      "name": "initialize",
+      "discriminator": [
+        175,
+        175,
+        109,
+        31,
+        13,
+        152,
+        155,
+        237
+      ],
+      "accounts": [
         {
-          name: 'payer';
-          writable: true;
-          signer: true;
+          "name": "payer",
+          "writable": true,
+          "signer": true
         },
         {
-          name: 'toolingDataExplorer';
-          writable: true;
-          signer: true;
+          "name": "toolingDataExplorer",
+          "writable": true,
+          "signer": true
         },
         {
-          name: 'systemProgram';
-          address: '11111111111111111111111111111111';
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
         }
-      ];
-      args: [];
+      ],
+      "args": []
     },
     {
-      name: 'set';
-      discriminator: [198, 51, 53, 241, 116, 29, 126, 194];
-      accounts: [
+      "name": "set",
+      "discriminator": [
+        198,
+        51,
+        53,
+        241,
+        116,
+        29,
+        126,
+        194
+      ],
+      "accounts": [
         {
-          name: 'toolingDataExplorer';
-          writable: true;
+          "name": "toolingDataExplorer",
+          "writable": true
         }
-      ];
-      args: [
+      ],
+      "args": [
         {
-          name: 'value';
-          type: 'u8';
+          "name": "value",
+          "type": "u8"
         }
-      ];
+      ]
     }
-  ];
-  accounts: [
+  ],
+  "accounts": [
     {
-      name: 'toolingDataExplorer';
-      discriminator: [135, 64, 223, 168, 233, 143, 162, 215];
+      "name": "toolingDataExplorer",
+      "discriminator": [
+        168,
+        148,
+        78,
+        32,
+        204,
+        8,
+        187,
+        197
+      ]
     }
-  ];
-  types: [
+  ],
+  "types": [
     {
-      name: 'toolingDataExplorer';
-      type: {
-        kind: 'struct';
-        fields: [
+      "name": "toolingDataExplorer",
+      "type": {
+        "kind": "struct",
+        "fields": [
           {
-            name: 'count';
-            type: 'u8';
+            "name": "count",
+            "type": "u8"
           }
-        ];
-      };
+        ]
+      }
     }
-  ];
+  ]
 };

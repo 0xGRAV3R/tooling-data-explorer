@@ -16,17 +16,24 @@ import {
   useTransferSol,
 } from './account-data-access';
 
+import MyComponent  from '../ui/my-component';
+
 export function AccountBalance({ address }: { address: PublicKey }) {
   const query = useGetBalance({ address });
 
   return (
     <div>
+
+      <div>
+        <MyComponent />
+      </div>
       <h1
         className="text-5xl font-bold cursor-pointer"
         onClick={() => query.refetch()}
       >
         {query.data ? <BalanceSol balance={query.data} /> : '...'} SOL
       </h1>
+      
     </div>
   );
 }
@@ -75,6 +82,7 @@ export function AccountButtons({ address }: { address: PublicKey }) {
 
   return (
     <div>
+
       <ModalAirdrop
         hide={() => setShowAirdropModal(false)}
         address={address}
@@ -91,22 +99,25 @@ export function AccountButtons({ address }: { address: PublicKey }) {
         hide={() => setShowSendModal(false)}
       />
       <div className="space-x-2">
+
+        {/* MyComponent here */}
+
         <button
           disabled={cluster.network?.includes('mainnet')}
-          className="btn btn-xs lg:btn-md btn-outline"
+          className="btn btn-xs lg:btn-sm btn-outline"
           onClick={() => setShowAirdropModal(true)}
         >
           Airdrop
         </button>
         <button
           disabled={wallet.publicKey?.toString() !== address.toString()}
-          className="btn btn-xs lg:btn-md btn-outline"
+          className="btn btn-xs lg:btn-sm btn-outline"
           onClick={() => setShowSendModal(true)}
         >
           Send
         </button>
         <button
-          className="btn btn-xs lg:btn-md btn-outline"
+          className="btn btn-xs lg:btn-sm btn-outline"
           onClick={() => setShowReceiveModal(true)}
         >
           Receive
