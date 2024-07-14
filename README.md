@@ -1,6 +1,11 @@
 # tooling-data-explorer
 
-This project is generated with the [create-solana-dapp](https://github.com/solana-developers/create-solana-dapp) generator.
+Design and develop an explorer or dashboard that fetches data from RPC and/or API sources. The UI should offer a clear and easy-to-use experience for a broad range of users.
+
+Requirements:
+-Data Fetching: Retrieve data from RPC and/or API endpoints.
+-User Experience: Create an intuitive and user-friendly interface.
+-Deployment: Ensure the explorer or dashboard can be tested and deployed on Cloudflare or Vercel.
 
 ## Getting Started
 
