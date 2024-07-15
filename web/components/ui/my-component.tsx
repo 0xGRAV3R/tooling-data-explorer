@@ -4,7 +4,8 @@ const MyComponent: React.FC = () => {
   const [inputValue, setInputValue] = useState<string>('');
 
   const handleSubmit = () => {
-    window.location.href = `http://localhost:3000/account/${inputValue}`;
+    //window.location.href = `http://localhost:3000/account/${inputValue}`;
+    window.location.href = `https://soltrekker.vercel.app/account/${inputValue}`;
   };
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
